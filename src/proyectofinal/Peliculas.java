@@ -7,15 +7,13 @@ package proyectofinal;
 
 /**
  *
- * @author 
+ * @author Kevin
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public class Peliculas {
+    private String nombrepelicula;
+    private String titulo;
+    private String director;
+    private String actor;
+    private String actriz;
+    private String genero;
 }
