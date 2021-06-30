@@ -52,4 +52,4 @@ public class Peliculas {
     genero=Genero;
     }
     //hola soy tutifruti
-}
+}//asdfa
