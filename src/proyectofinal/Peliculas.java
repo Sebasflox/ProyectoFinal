@@ -51,4 +51,5 @@ public class Peliculas {
     public void setgenero(String Genero){
     genero=Genero;
     }
+    //hola soy tutifruti
 }
