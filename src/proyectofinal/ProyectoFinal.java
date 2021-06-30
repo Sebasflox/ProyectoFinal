@@ -74,6 +74,5 @@ public class ProyectoFinal {
         System.out.println("Usted nació el: " + usuario.getdia() + " de " + usuario.getmes() + " del año " + usuario.getaño());
         
         System.out.println("Su usuario es: " + usuario.getuser() + " y su password es: " + usuario.getcontraseña());
-        System.out.println("puto el que lo lea");
     }
 }
