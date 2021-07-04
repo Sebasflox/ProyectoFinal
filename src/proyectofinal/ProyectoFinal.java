@@ -16,7 +16,7 @@ public class ProyectoFinal {
         String apellido2;
         String nacimiento;
         int dia;
-        String mes;
+        int mes;
         int año;
         String user;
         String contraseña;
@@ -51,7 +51,7 @@ public class ProyectoFinal {
         usuario.setdia(dia);
         
         System.out.print("Mes: ");
-        mes=dato.next();
+        mes=dato.nextInt();
         usuario.setmes(mes);
         
         System.out.print("Año: ");
