@@ -1,5 +1,5 @@
 
-package proyectofinal;
+package Clases;
 
 
 public class Peliculas {
