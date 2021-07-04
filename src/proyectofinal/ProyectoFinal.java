@@ -1,6 +1,7 @@
 
 package proyectofinal;
 
+import Clases.Usuario;
 import java.util.Scanner;
 
 
