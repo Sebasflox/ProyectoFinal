@@ -8,7 +8,7 @@ public class Usuario {
     private String apellido2;
     private String nacimiento;
     private int dia;
-    private String mes;
+    private int mes;
     private int año;
     private String user;
     private String contraseña;
@@ -41,10 +41,10 @@ public class Usuario {
     dia = Dia;
     }
     
-    public String getmes(){
+    public int getmes(){
     return mes;
     }
-    public void setmes(String Mes){
+    public void setmes(int Mes){
     mes=Mes;
     }
     
