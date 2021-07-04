@@ -6,7 +6,6 @@ public class Usuario {
     private String nombre;
     private String apellido1;
     private String apellido2;
-    private String nacimiento;
     private int dia;
     private int mes;
     private int año;
@@ -54,17 +53,10 @@ public class Usuario {
     public void setaño(int Año){
     año=Año;
     }
-    
-   /* public String getnacimiento(){
-    return nacimiento;
-    }
-    public void setnacimiento(){
-    nacimiento = (dia + mes + año);
-    }*/
-    
     public String getuser(){
     return user;
     }
+    
     public void setuser(String User){
     user=User;
     }
