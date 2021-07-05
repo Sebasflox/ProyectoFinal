@@ -75,7 +75,7 @@ public class ProyectoFinal {
         
         System.out.println("Su nombre es: " + usuario.getnombre() + " " + usuario.getapellido1() + " " + usuario.getapellido2());
         
-        System.out.println("Usted nació el: " + usuario.getdia() + " de " + usuario.getmes() + " del año " + usuario.getaño());
+        System.out.println("Usted nació el: " + usuario.getdia() + " del " + usuario.getmes() + " del año " + usuario.getaño());
         
         System.out.println("Su usuario es: " + usuario.getuser() + " y su password es: " + usuario.getcontraseña());
         
