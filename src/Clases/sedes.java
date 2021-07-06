@@ -21,6 +21,4 @@ public class sedes {
     public void setdireccion(String Direccion){
     direccion=Direccion;
     }
-    
-    
 }
