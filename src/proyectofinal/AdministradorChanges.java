@@ -27,21 +27,29 @@ public class AdministradorChanges extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Labelnombre = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        Buttoncancelar = new javax.swing.JButton();
+        Botonout = new javax.swing.JButton();
+        Botonuser = new javax.swing.JButton();
+        Botonsedes = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Sedes");
+        Labelnombre.setText("¿Qué desea editar?");
 
-        jLabel2.setText("Peliculas");
-
-        Buttoncancelar.setText("Cancelar");
-        Buttoncancelar.addActionListener(new java.awt.event.ActionListener() {
+        Botonout.setText("Salis del sistema");
+        Botonout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtoncancelarActionPerformed(evt);
+                BotonoutActionPerformed(evt);
+            }
+        });
+
+        Botonuser.setText("Usuarios");
+
+        Botonsedes.setText("Sedes");
+        Botonsedes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonsedesActionPerformed(evt);
             }
         });
 
@@ -50,43 +58,62 @@ public class AdministradorChanges extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(340, 340, 340))
+                .addGap(57, 57, 57)
+                .addComponent(Botonuser)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+                .addComponent(Botonsedes)
+                .addGap(86, 86, 86))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Buttoncancelar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(Labelnombre))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Botonout))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel1)
-                .addGap(102, 102, 102)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(28, 28, 28)
+                .addComponent(Labelnombre)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addComponent(Buttoncancelar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addComponent(Botonout))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Botonuser)
+                            .addComponent(Botonsedes))))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ButtoncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoncancelarActionPerformed
+    private void BotonoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonoutActionPerformed
         // TODO add your handling code here:
         
         Administrador ventana2 = new Administrador();
         ventana2.setVisible(true);
         this.setVisible(false);
         
-    }//GEN-LAST:event_ButtoncancelarActionPerformed
+    }//GEN-LAST:event_BotonoutActionPerformed
+
+    private void BotonsedesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonsedesActionPerformed
+        // TODO add your handling code here:
+        
+        Sedes ventana2 = new Sedes();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonsedesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,9 +151,10 @@ public class AdministradorChanges extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Buttoncancelar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton Botonout;
+    private javax.swing.JButton Botonsedes;
+    private javax.swing.JButton Botonuser;
+    private javax.swing.JLabel Labelnombre;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
