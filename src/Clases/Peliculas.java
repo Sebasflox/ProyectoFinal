@@ -2,20 +2,27 @@
 package Clases;
 
 
-public class Peliculas {
-    private String nombrepelicula;
+public class Peliculas extends sedes{
+    
     private String titulo;
     private String director;
     private String actor;
     private String actriz;
     private String genero;
     
-    public String getnombrepelicula(){
-    return nombrepelicula;
+    public Peliculas (){}
+    
+    public Peliculas (String nombre, String titulo, String director, String actor, String actriz, String genero){
+        
+        super(nombre);
+        this.actor = actor;
+        this.actriz = actriz;
+        this.director = director;
+        this.genero = genero;
+        this.titulo = titulo;
+        
     }
-    public void setnombrepelicula(String Nombrepelicula ){
-    nombrepelicula=Nombrepelicula;
-    }
+    
     
     public String gettitulo(){
     return titulo;    
