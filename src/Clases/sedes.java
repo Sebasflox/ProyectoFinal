@@ -4,15 +4,22 @@ package Clases;
 
 public class sedes {
     
-    private String nombre_sede;
+    private String nombre;
     private String direccion;
     
+    public sedes (){}
     
-    public String getnombre_sede(){
-    return nombre_sede;
+    public sedes (String nombre){
+    
+        this.nombre = nombre;
     }
-    public void setnombre_sede(String Nombre_sede){
-    nombre_sede=Nombre_sede;
+    
+    
+    public String getnombre(){
+    return nombre;
+    }
+    public void setnombre(String Nombre){
+    nombre=Nombre;
     }
     
     public String getdireccion(){
