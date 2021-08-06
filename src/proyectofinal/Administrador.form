@@ -34,10 +34,7 @@
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Component id="LabelPassadmin" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="LabelError" max="32767" attributes="0"/>
-                  <Component id="TextPassadmin" pref="180" max="32767" attributes="0"/>
-              </Group>
+              <Component id="TextPassadmin" min="-2" pref="180" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -50,9 +47,7 @@
                   <Component id="LabelPassadmin" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TextPassadmin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="LabelError" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <EmptySpace pref="56" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Buttoncancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Buttoningresar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -85,11 +80,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtoningresarActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="LabelError">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="."/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
