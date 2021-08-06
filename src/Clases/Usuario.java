@@ -2,8 +2,8 @@
 package Clases;
 
 
-public class Usuario {
-    private String nombre;
+public class Usuario extends sedes{
+    
     private String apellido1;
     private String apellido2;
     private int dia;
@@ -12,12 +12,22 @@ public class Usuario {
     private String user;
     private String contraseña;
     
-    public String getnombre(){
-    return nombre;
+    
+    public Usuario (){}
+    
+    public Usuario (String nombre, String apellido1, String apellido2, int dia, int mes, int año, String user, String contraseña){
+    
+        super(nombre);
+        this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
+        this.dia = dia;
+        this.mes = mes;
+        this.año = año;
+        this.user = user;
+        this.contraseña = contraseña;
+    
     }
-    public void setnombre(String Nombre){
-    nombre = Nombre;
-    }
+    
     
     public String getapellido1(){
     return apellido1;
