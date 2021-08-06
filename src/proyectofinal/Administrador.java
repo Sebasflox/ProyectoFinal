@@ -5,6 +5,8 @@
  */
 package proyectofinal;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Sebas
@@ -33,7 +35,6 @@ public class Administrador extends javax.swing.JFrame {
         TextPassadmin = new javax.swing.JTextField();
         Buttoncancelar = new javax.swing.JButton();
         Buttoningresar = new javax.swing.JButton();
-        LabelError = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,8 +54,6 @@ public class Administrador extends javax.swing.JFrame {
             }
         });
 
-        LabelError.setText(".");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -69,9 +68,7 @@ public class Administrador extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(LabelPassadmin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(LabelError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TextPassadmin, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
+                .addComponent(TextPassadmin, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
         layout.setVerticalGroup(
@@ -81,9 +78,7 @@ public class Administrador extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LabelPassadmin)
                     .addComponent(TextPassadmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(LabelError)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Buttoncancelar)
                     .addComponent(Buttoningresar))
@@ -116,7 +111,8 @@ public class Administrador extends javax.swing.JFrame {
                 
         }
         else{  
-                LabelError.setText("Contraseña incorrecta");
+            
+                JOptionPane.showMessageDialog(this, "Contraseña incorrecta");
         }
 
         
@@ -161,7 +157,6 @@ public class Administrador extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Buttoncancelar;
     private javax.swing.JButton Buttoningresar;
-    private javax.swing.JLabel LabelError;
     private javax.swing.JLabel LabelPassadmin;
     private javax.swing.JTextField TextPassadmin;
     // End of variables declaration//GEN-END:variables
