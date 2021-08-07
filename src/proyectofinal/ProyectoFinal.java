@@ -130,7 +130,9 @@ public class ProyectoFinal extends javax.swing.JFrame {
     private void Button2RegisesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2RegisesionActionPerformed
         // TODO add your handling code here:
         
-        
+        Registrarse ventana2 = new Registrarse();
+        ventana2.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_Button2RegisesionActionPerformed
 
     private void Button3AdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3AdminActionPerformed
