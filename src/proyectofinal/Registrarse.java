@@ -5,6 +5,7 @@
  */
 package proyectofinal;
 
+import Clases.Usuario;
 import java.io.*;
 
 /**
@@ -34,17 +35,21 @@ public class Registrarse extends javax.swing.JFrame {
         LabelApellido1 = new javax.swing.JLabel();
         Labelapellido2 = new javax.swing.JLabel();
         LabelID = new javax.swing.JLabel();
-        Labelnacimiento = new javax.swing.JLabel();
         Labeluser = new javax.swing.JLabel();
         Labelpass = new javax.swing.JLabel();
         Textapellido1 = new javax.swing.JTextField();
         Textapellido2 = new javax.swing.JTextField();
         TextID = new javax.swing.JTextField();
-        Textnacmiento = new javax.swing.JTextField();
-        Textuser = new javax.swing.JTextField();
-        Textpass = new javax.swing.JTextField();
+        Textdia = new javax.swing.JTextField();
+        Textmes = new javax.swing.JTextField();
+        Textaño = new javax.swing.JTextField();
         Botoncancelar = new javax.swing.JButton();
         Textname = new javax.swing.JTextField();
+        Textuser = new javax.swing.JTextField();
+        Textpass = new javax.swing.JTextField();
+        Labeldia = new javax.swing.JLabel();
+        Labelmes = new javax.swing.JLabel();
+        Labelaño = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,13 +68,22 @@ public class Registrarse extends javax.swing.JFrame {
 
         LabelID.setText("Cedula:");
 
-        Labelnacimiento.setText("Nacimiento:");
-
         Labeluser.setText("Usuario:");
 
         Labelpass.setText("Contraseña:");
 
         Botoncancelar.setText("Cancelar");
+        Botoncancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotoncancelarActionPerformed(evt);
+            }
+        });
+
+        Labeldia.setText("Día:");
+
+        Labelmes.setText("Mes:");
+
+        Labelaño.setText("Año:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,56 +98,69 @@ public class Registrarse extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Labelnacimiento)
                     .addComponent(LabelID)
                     .addComponent(Labelapellido2)
                     .addComponent(LabelApellido1)
                     .addComponent(Labelname)
                     .addComponent(Labelpass)
-                    .addComponent(Labeluser))
+                    .addComponent(Labeluser)
+                    .addComponent(Labeldia)
+                    .addComponent(Labelmes)
+                    .addComponent(Labelaño))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Textpass)
                     .addComponent(Textapellido1)
                     .addComponent(Textapellido2)
                     .addComponent(TextID)
-                    .addComponent(Textnacmiento)
-                    .addComponent(Textuser)
-                    .addComponent(Textpass)
-                    .addComponent(Textname, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))
+                    .addComponent(Textdia)
+                    .addComponent(Textmes)
+                    .addComponent(Textaño)
+                    .addComponent(Textname, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
+                    .addComponent(Textuser))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Labelname)
-                    .addComponent(Textname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Textapellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LabelApellido1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Textapellido2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Labelapellido2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TextID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Textname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Labelname))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LabelApellido1)
+                            .addComponent(Textapellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Textapellido2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Labelapellido2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TextID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(LabelID))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Textdia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Labeldia))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Textnacmiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Labelnacimiento))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Textmes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Labelmes))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Textaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Labelaño, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Textuser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Labeluser))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Labelpass)
-                    .addComponent(Textpass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                    .addComponent(Textpass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Labelpass))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Botonregistrarse)
                     .addComponent(Botoncancelar))
@@ -145,7 +172,69 @@ public class Registrarse extends javax.swing.JFrame {
 
     private void BotonregistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonregistrarseActionPerformed
         // TODO add your handling code here:
+        
+        
+        //String nombre;
+        
+        
+        
+        try{
+        
+            Usuario dato = new Usuario();
+            
+            String nombrearchivo = "Registro_usuarios.txt";
+            
+            //String archivo = "Registro_usuarios.txt";
+            
+            dato.setnombre(Textname.getText());
+            dato.setapellido1(Textapellido1.getText());
+            dato.setapellido2(Textapellido2.getText());
+            dato.setcedula(TextID.getText());
+            dato.setdia(Textdia.getText());
+            dato.setmes(Textmes.getText());
+            dato.setaño(Textaño.getText());
+            dato.setuser(Textuser.getText());
+            dato.setcontraseña(Textpass.getText());
+            
+            
+            
+            String contenido = dato.getnombre() + " " + dato.getapellido1() + " " + dato.getapellido2() + " " + dato.getcedula() + " " + dato.getdia() + " " + dato.getmes() + " " + dato.getaño() + " " + dato.getuser() + " " + dato.getcontraseña() + "\n"; 
+            
+            
+            //Textname.getText() + " " + Textapellido1.getText() + " " + Textapellido2.getText() + " " + TextID.getText() + " " + Textnacmiento.getText() + " " + Textuser.getText() + " " + Textpass.getText();
+            
+            File file = new File(nombrearchivo);
+            
+            if(!file.exists()){
+                
+                file.createNewFile();
+            }
+            
+            FileWriter fw = new FileWriter(file, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(contenido);
+            bw.close();
+        }
+        catch(Exception e){
+            
+        e.printStackTrace();
+        
+        }
+        
+        ProyectoFinal ventana2 = new ProyectoFinal();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
     }//GEN-LAST:event_BotonregistrarseActionPerformed
+
+    private void BotoncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotoncancelarActionPerformed
+        // TODO add your handling code here:
+        
+        ProyectoFinal ventana2 = new ProyectoFinal();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotoncancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -188,14 +277,18 @@ public class Registrarse extends javax.swing.JFrame {
     private javax.swing.JLabel LabelApellido1;
     private javax.swing.JLabel LabelID;
     private javax.swing.JLabel Labelapellido2;
-    private javax.swing.JLabel Labelnacimiento;
+    private javax.swing.JLabel Labelaño;
+    private javax.swing.JLabel Labeldia;
+    private javax.swing.JLabel Labelmes;
     private javax.swing.JLabel Labelname;
     private javax.swing.JLabel Labelpass;
     private javax.swing.JLabel Labeluser;
     private javax.swing.JTextField TextID;
     private javax.swing.JTextField Textapellido1;
     private javax.swing.JTextField Textapellido2;
-    private javax.swing.JTextField Textnacmiento;
+    private javax.swing.JTextField Textaño;
+    private javax.swing.JTextField Textdia;
+    private javax.swing.JTextField Textmes;
     private javax.swing.JTextField Textname;
     private javax.swing.JTextField Textpass;
     private javax.swing.JTextField Textuser;
