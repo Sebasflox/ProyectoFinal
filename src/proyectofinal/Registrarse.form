@@ -33,23 +33,27 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="Labelnacimiento" min="-2" max="-2" attributes="0"/>
                   <Component id="LabelID" min="-2" max="-2" attributes="0"/>
                   <Component id="Labelapellido2" min="-2" max="-2" attributes="0"/>
                   <Component id="LabelApellido1" min="-2" max="-2" attributes="0"/>
                   <Component id="Labelname" min="-2" max="-2" attributes="0"/>
                   <Component id="Labelpass" alignment="1" min="-2" max="-2" attributes="0"/>
                   <Component id="Labeluser" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labeldia" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labelmes" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labelaño" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="Textpass" max="32767" attributes="0"/>
                   <Component id="Textapellido1" max="32767" attributes="0"/>
                   <Component id="Textapellido2" max="32767" attributes="0"/>
                   <Component id="TextID" max="32767" attributes="0"/>
-                  <Component id="Textnacmiento" max="32767" attributes="0"/>
-                  <Component id="Textuser" max="32767" attributes="0"/>
-                  <Component id="Textpass" max="32767" attributes="0"/>
+                  <Component id="Textdia" max="32767" attributes="0"/>
+                  <Component id="Textmes" max="32767" attributes="0"/>
+                  <Component id="Textaño" max="32767" attributes="0"/>
                   <Component id="Textname" pref="211" max="32767" attributes="0"/>
+                  <Component id="Textuser" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -58,42 +62,54 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Labelname" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Textname" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="Textname" min="-2" max="-2" attributes="0"/>
+                          <Component id="Labelname" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="LabelApellido1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Textapellido1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Textapellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Labelapellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="TextID" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="LabelID" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="Textdia" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labeldia" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Textapellido1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelApellido1" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="Textmes" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labelmes" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Textaño" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labelaño" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Textapellido2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Labelapellido2" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="Textuser" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labeluser" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TextID" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="LabelID" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Textnacmiento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Labelnacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Textuser" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Labeluser" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Labelpass" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Textpass" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Labelpass" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Botonregistrarse" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Botoncancelar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -132,11 +148,6 @@
         <Property name="text" type="java.lang.String" value="Cedula:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="Labelnacimiento">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nacimiento:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="Labeluser">
       <Properties>
         <Property name="text" type="java.lang.String" value="Usuario:"/>
@@ -153,18 +164,40 @@
     </Component>
     <Component class="javax.swing.JTextField" name="TextID">
     </Component>
-    <Component class="javax.swing.JTextField" name="Textnacmiento">
+    <Component class="javax.swing.JTextField" name="Textdia">
     </Component>
-    <Component class="javax.swing.JTextField" name="Textuser">
+    <Component class="javax.swing.JTextField" name="Textmes">
     </Component>
-    <Component class="javax.swing.JTextField" name="Textpass">
+    <Component class="javax.swing.JTextField" name="Texta&#xf1;o">
     </Component>
     <Component class="javax.swing.JButton" name="Botoncancelar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotoncancelarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="Textname">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Textuser">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Textpass">
+    </Component>
+    <Component class="javax.swing.JLabel" name="Labeldia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="D&#xed;a:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Labelmes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mes:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Labela&#xf1;o">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="A&#xf1;o:"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
