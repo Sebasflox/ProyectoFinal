@@ -1,21 +1,24 @@
 
 package Clases;
 
+import Clases.sedes;
+
 
 public class Usuario extends sedes{
     
     private String apellido1;
     private String apellido2;
-    private int dia;
-    private int mes;
-    private int año;
+    private String dia;
+    private String mes;
+    private String año;
     private String user;
     private String contraseña;
+    private String cedula;
     
     
     public Usuario (){}
     
-    public Usuario (String nombre, String apellido1, String apellido2, int dia, int mes, int año, String user, String contraseña){
+    public Usuario (String nombre, String apellido1, String apellido2, String dia, String mes, String año, String user, String contraseña){
     
         super(nombre);
         this.apellido1 = apellido1;
@@ -43,24 +46,24 @@ public class Usuario extends sedes{
     apellido2 =Apellido2;
     }
     
-    public int getdia(){
+    public String getdia(){
     return dia;
     }
-    public void setdia(int Dia){
+    public void setdia(String Dia){
     dia = Dia;
     }
     
-    public int getmes(){
+    public String getmes(){
     return mes;
     }
-    public void setmes(int Mes){
+    public void setmes(String Mes){
     mes=Mes;
     }
     
-    public int getaño(){
+    public String getaño(){
     return año;
     }
-    public void setaño(int Año){
+    public void setaño(String Año){
     año=Año;
     }
     public String getuser(){
@@ -76,5 +79,12 @@ public class Usuario extends sedes{
     }
     public void setcontraseña(String Contraseña){
     contraseña=Contraseña;
+    }
+    
+    public String getcedula(){
+    return cedula;
+    }
+    public void setcedula(String Cedula){
+    cedula=Cedula;
     }
 }
