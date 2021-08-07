@@ -33,7 +33,6 @@ public class Inicio_sesion extends javax.swing.JFrame {
         TextPass = new javax.swing.JTextField();
         ButtonCancelar = new javax.swing.JButton();
         ButtonIniciar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,8 +49,6 @@ public class Inicio_sesion extends javax.swing.JFrame {
 
         ButtonIniciar.setText("Iniciar sesion");
 
-        jButton1.setText("Olvidé mi contraseña");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -67,13 +64,11 @@ public class Inicio_sesion extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(TextNameUsuario)
                             .addComponent(TextPass, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 67, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(ButtonCancelar)
-                        .addGap(45, 45, 45)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(ButtonIniciar)))
                 .addContainerGap())
         );
@@ -91,8 +86,7 @@ public class Inicio_sesion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonCancelar)
-                    .addComponent(ButtonIniciar)
-                    .addComponent(jButton1))
+                    .addComponent(ButtonIniciar))
                 .addContainerGap())
         );
 
@@ -149,6 +143,5 @@ public class Inicio_sesion extends javax.swing.JFrame {
     private javax.swing.JLabel LabelPassUsuario;
     private javax.swing.JTextField TextNameUsuario;
     private javax.swing.JTextField TextPass;
-    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
