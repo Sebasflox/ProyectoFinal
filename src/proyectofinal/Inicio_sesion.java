@@ -5,10 +5,9 @@
  */
 package proyectofinal;
 
-/**
- *
- * @author Sebas
- */
+
+import java.io.*;
+
 public class Inicio_sesion extends javax.swing.JFrame {
 
     /**
@@ -48,6 +47,11 @@ public class Inicio_sesion extends javax.swing.JFrame {
         });
 
         ButtonIniciar.setText("Iniciar sesion");
+        ButtonIniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonIniciarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,6 +104,23 @@ public class Inicio_sesion extends javax.swing.JFrame {
         ventana2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_ButtonCancelarActionPerformed
+
+    private void ButtonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIniciarActionPerformed
+        // TODO add your handling code here:
+        
+        FileReader fr = null;
+        
+        try{
+            
+        
+        
+        }
+        catch(Exception e){
+            
+            
+        
+        }
+    }//GEN-LAST:event_ButtonIniciarActionPerformed
 
     /**
      * @param args the command line arguments
