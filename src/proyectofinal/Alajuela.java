@@ -16,6 +16,7 @@ public class Alajuela extends javax.swing.JFrame {
      */
     public Alajuela() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
