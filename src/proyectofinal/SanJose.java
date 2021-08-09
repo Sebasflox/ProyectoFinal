@@ -16,6 +16,7 @@ public class SanJose extends javax.swing.JFrame {
      */
     public SanJose() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
