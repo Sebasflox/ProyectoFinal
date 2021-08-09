@@ -18,6 +18,7 @@ public class Administrador extends javax.swing.JFrame {
      */
     public Administrador() {
         initComponents();
+        setLocationRelativeTo(null);
     }
     
     private static String dato = "";
