@@ -6,15 +6,28 @@
 package proyectofinal;
 
 
+import Clases.Seguridad;
 import java.io.*;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Inicio_sesion extends javax.swing.JFrame {
+    private static Scanner sc;
+    private static int intentos;
+    private static  String user, pwd;
 
     /**
      * Creates new form Inicio_sesion
      */
     public Inicio_sesion() {
         initComponents();
+        
+        setLocationRelativeTo(null);
+    }
+
+    public static void setIntentos(int intentos) {
+        Inicio_sesion.intentos = intentos;
     }
 
     /**
@@ -28,16 +41,20 @@ public class Inicio_sesion extends javax.swing.JFrame {
 
         LabelNameUsuario = new javax.swing.JLabel();
         LabelPassUsuario = new javax.swing.JLabel();
-        TextNameUsuario = new javax.swing.JTextField();
+        TextUsuario = new javax.swing.JTextField();
         TextPass = new javax.swing.JTextField();
         ButtonCancelar = new javax.swing.JButton();
         ButtonIniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        LabelNameUsuario.setText("Nombres de usuario: ");
+        LabelNameUsuario.setText("Usuario:");
 
         LabelPassUsuario.setText("Contraseña:");
+
+        TextUsuario.setToolTipText("Ingrese su nombre de usuario");
+
+        TextPass.setToolTipText("Ingrese su contraseña");
 
         ButtonCancelar.setText("Cancelar");
         ButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -58,23 +75,21 @@ public class Inicio_sesion extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LabelNameUsuario)
-                            .addComponent(LabelPassUsuario))
-                        .addGap(56, 56, 56)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TextNameUsuario)
-                            .addComponent(TextPass, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
-                        .addGap(0, 67, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ButtonCancelar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ButtonIniciar)))
+                .addContainerGap()
+                .addComponent(ButtonCancelar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ButtonIniciar)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(LabelNameUsuario)
+                    .addComponent(LabelPassUsuario))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TextUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)
+                    .addComponent(TextPass))
+                .addGap(79, 79, 79))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -82,7 +97,7 @@ public class Inicio_sesion extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LabelNameUsuario)
-                    .addComponent(TextNameUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TextUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LabelPassUsuario)
@@ -106,19 +121,50 @@ public class Inicio_sesion extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonCancelarActionPerformed
 
     private void ButtonIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIniciarActionPerformed
-        // TODO add your handling code here:
+
         
         FileReader fr = null;
-        
-        try{
+        try {
+            int nLineas = 0;
+            int i=0;
+            String [] usuarios = null;
+            String linea;
+            sc = new Scanner (new File("C:\\Programacion\\Java\\ProyectoFinal\\Registro_usuarios.txt"));
+            File f = new File("C:\\Programacion\\Java\\ProyectoFinal\\Registro_usuarios.txt");
+            fr = new FileReader(f);
+            BufferedReader br = new BufferedReader(fr);
             
-        
-        
-        }
-        catch(Exception e){
+            try {
+                while((linea=br.readLine())!=null){
+                    nLineas++;
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(Inicio_sesion.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            usuarios = new String [nLineas];
+            
+            while(sc.hasNextLine()){
+                usuarios[i++] = sc.nextLine();
+            }
+            
+            intentos++;
+            user = TextUsuario.getText();
+            pwd = TextPass.getText();
+            
+            Seguridad s = new Seguridad();
+            s.validarUsuario(usuarios, user, pwd, intentos);
             
             
-        
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Inicio_sesion.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                fr.close();
+            } catch (IOException ex) {
+                Logger.getLogger(Inicio_sesion.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }//GEN-LAST:event_ButtonIniciarActionPerformed
 
@@ -162,7 +208,7 @@ public class Inicio_sesion extends javax.swing.JFrame {
     private javax.swing.JButton ButtonIniciar;
     private javax.swing.JLabel LabelNameUsuario;
     private javax.swing.JLabel LabelPassUsuario;
-    private javax.swing.JTextField TextNameUsuario;
     private javax.swing.JTextField TextPass;
+    private javax.swing.JTextField TextUsuario;
     // End of variables declaration//GEN-END:variables
 }
