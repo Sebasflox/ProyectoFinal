@@ -16,6 +16,7 @@ public class Cartago extends javax.swing.JFrame {
      */
     public Cartago() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
