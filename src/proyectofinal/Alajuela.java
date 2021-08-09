@@ -28,20 +28,11 @@ public class Alajuela extends javax.swing.JFrame {
     private void initComponents() {
 
         Labeldato = new javax.swing.JLabel();
-        Labeldato2 = new javax.swing.JLabel();
-        BotonPeli = new javax.swing.JButton();
-        BotonCarte = new javax.swing.JButton();
         BotonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Labeldato.setText("Area de mantenimiento de la sede de Cartago");
-
-        Labeldato2.setText("¿Qué desea editar?");
-
-        BotonPeli.setText("Peliculas");
-
-        BotonCarte.setText("Cartelera");
 
         BotonCancelar.setText("Cancelar");
         BotonCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -60,33 +51,16 @@ public class Alajuela extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(BotonCancelar))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(148, 148, 148)
-                        .addComponent(Labeldato2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Labeldato))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(BotonPeli)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                        .addComponent(BotonCarte)))
-                .addGap(79, 79, 79))
+                        .addGap(212, 212, 212)
+                        .addComponent(Labeldato)))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
+                .addGap(25, 25, 25)
                 .addComponent(Labeldato)
-                .addGap(18, 18, 18)
-                .addComponent(Labeldato2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonPeli)
-                    .addComponent(BotonCarte))
-                .addGap(59, 59, 59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 415, Short.MAX_VALUE)
                 .addComponent(BotonCancelar)
                 .addContainerGap())
         );
@@ -140,9 +114,6 @@ public class Alajuela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonCarte;
-    private javax.swing.JButton BotonPeli;
     private javax.swing.JLabel Labeldato;
-    private javax.swing.JLabel Labeldato2;
     // End of variables declaration//GEN-END:variables
 }
