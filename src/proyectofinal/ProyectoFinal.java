@@ -16,6 +16,7 @@ public class ProyectoFinal extends javax.swing.JFrame {
      */
     public ProyectoFinal() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
