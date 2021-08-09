@@ -28,20 +28,11 @@ public class SanJose extends javax.swing.JFrame {
     private void initComponents() {
 
         Labeldato = new javax.swing.JLabel();
-        Labeldato2 = new javax.swing.JLabel();
-        BotonPeli = new javax.swing.JButton();
-        BotonCarte = new javax.swing.JButton();
         BotonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Labeldato.setText("Area de mantenimiento de la sede de San José");
-
-        Labeldato2.setText("¿Qué desea editar?");
-
-        BotonPeli.setText("Peliculas");
-
-        BotonCarte.setText("Cartelera");
 
         BotonCancelar.setText("Cancelar");
         BotonCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -55,36 +46,21 @@ public class SanJose extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(BotonPeli)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotonCarte)
-                .addGap(71, 71, 71))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(Labeldato))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(Labeldato2))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(BotonCancelar)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                        .addComponent(BotonCancelar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(226, 226, 226)
+                        .addComponent(Labeldato)))
+                .addContainerGap(227, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(37, 37, 37)
                 .addComponent(Labeldato)
-                .addGap(18, 18, 18)
-                .addComponent(Labeldato2)
-                .addGap(58, 58, 58)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonPeli)
-                    .addComponent(BotonCarte))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 403, Short.MAX_VALUE)
                 .addComponent(BotonCancelar)
                 .addContainerGap())
         );
@@ -137,9 +113,6 @@ public class SanJose extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonCarte;
-    private javax.swing.JButton BotonPeli;
     private javax.swing.JLabel Labeldato;
-    private javax.swing.JLabel Labeldato2;
     // End of variables declaration//GEN-END:variables
 }
