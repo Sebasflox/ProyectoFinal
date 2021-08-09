@@ -28,20 +28,11 @@ public class Cartago extends javax.swing.JFrame {
     private void initComponents() {
 
         Labeldato = new javax.swing.JLabel();
-        Labeldato2 = new javax.swing.JLabel();
-        BotonPeli = new javax.swing.JButton();
-        BotonCarte = new javax.swing.JButton();
         BotonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Labeldato.setText("Area de mantenimiento de la sede de Cartago");
-
-        Labeldato2.setText("¿Qué desea editar?");
-
-        BotonPeli.setText("Peliculas");
-
-        BotonCarte.setText("Cartelera");
 
         BotonCancelar.setText("Cancelar");
         BotonCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -55,36 +46,21 @@ public class Cartago extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(BotonPeli)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotonCarte)
-                .addGap(86, 86, 86))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(Labeldato))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(Labeldato2))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(BotonCancelar)))
-                .addContainerGap(115, Short.MAX_VALUE))
+                        .addComponent(BotonCancelar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(Labeldato)))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(41, 41, 41)
                 .addComponent(Labeldato)
-                .addGap(18, 18, 18)
-                .addComponent(Labeldato2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonPeli)
-                    .addComponent(BotonCarte))
-                .addGap(35, 35, 35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 399, Short.MAX_VALUE)
                 .addComponent(BotonCancelar)
                 .addContainerGap())
         );
@@ -138,9 +114,6 @@ public class Cartago extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonCarte;
-    private javax.swing.JButton BotonPeli;
     private javax.swing.JLabel Labeldato;
-    private javax.swing.JLabel Labeldato2;
     // End of variables declaration//GEN-END:variables
 }
