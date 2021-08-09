@@ -46,7 +46,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
 
         Botonuser.setText("Usuarios");
 
-        Botonsedes.setText("Sedes");
+        Botonsedes.setText("Cartelera sedes");
         Botonsedes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonsedesActionPerformed(evt);
@@ -60,9 +60,9 @@ public class AdministradorChanges extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(57, 57, 57)
                 .addComponent(Botonuser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
                 .addComponent(Botonsedes)
-                .addGap(86, 86, 86))
+                .addGap(52, 52, 52))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
