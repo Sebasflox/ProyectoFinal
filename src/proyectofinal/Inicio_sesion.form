@@ -24,28 +24,24 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="LabelNameUsuario" min="-2" max="-2" attributes="0"/>
-                          <Component id="LabelPassUsuario" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="TextNameUsuario" max="32767" attributes="0"/>
-                          <Component id="TextPass" pref="144" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="67" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ButtonCancelar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="ButtonIniciar" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="ButtonCancelar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="ButtonIniciar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="LabelNameUsuario" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelPassUsuario" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="TextUsuario" pref="202" max="32767" attributes="0"/>
+                  <Component id="TextPass" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,7 +51,7 @@
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="LabelNameUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextNameUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="TextUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -75,7 +71,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="LabelNameUsuario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nombres de usuario: "/>
+        <Property name="text" type="java.lang.String" value="Usuario:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="LabelPassUsuario">
@@ -83,9 +79,15 @@
         <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="TextNameUsuario">
+    <Component class="javax.swing.JTextField" name="TextUsuario">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Ingrese su nombre de usuario"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="TextPass">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Ingrese su contrase&#xf1;a"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ButtonCancelar">
       <Properties>
