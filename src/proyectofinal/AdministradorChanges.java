@@ -16,6 +16,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
      */
     public AdministradorChanges() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
