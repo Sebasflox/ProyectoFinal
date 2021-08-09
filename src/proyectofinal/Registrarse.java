@@ -184,7 +184,6 @@ public class Registrarse extends javax.swing.JFrame {
             
             String nombrearchivo = "Registro_usuarios.txt";
             
-            //String archivo = "Registro_usuarios.txt";
             
             dato.setnombre(Textname.getText());
             dato.setapellido1(Textapellido1.getText());
