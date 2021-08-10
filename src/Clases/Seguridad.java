@@ -2,7 +2,9 @@
 package Clases;
 
 import javax.swing.JOptionPane;
+import proyectofinal.Cartelera;
 import proyectofinal.Inicio_sesion;
+import proyectofinal.SeleccionCartelera;
 
 
 public class Seguridad {
@@ -23,6 +25,10 @@ public class Seguridad {
                 JOptionPane.showMessageDialog(null, res," Inicio de sesion", JOptionPane.INFORMATION_MESSAGE);
                 intentos=0;
                 login.setIntentos(intentos);
+                
+                new SeleccionCartelera().setVisible(true);
+                
+                
                 break;
             
             }
@@ -42,6 +48,10 @@ public class Seguridad {
         
         }
         
+    }
+
+    private void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
