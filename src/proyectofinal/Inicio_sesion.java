@@ -155,6 +155,7 @@ public class Inicio_sesion extends javax.swing.JFrame {
             Seguridad s = new Seguridad();
             s.validarUsuario(usuarios, user, pwd, intentos);
             
+
             
             
         } catch (FileNotFoundException ex) {
@@ -166,6 +167,9 @@ public class Inicio_sesion extends javax.swing.JFrame {
                 Logger.getLogger(Inicio_sesion.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+        
+        if(intentos==0) this.dispose();
+        
     }//GEN-LAST:event_ButtonIniciarActionPerformed
 
     /**
