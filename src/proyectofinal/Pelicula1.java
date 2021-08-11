@@ -18,6 +18,7 @@ public class Pelicula1 extends javax.swing.JFrame {
      */
     public Pelicula1() {
         initComponents();
+        setLocationRelativeTo(null);
         
         
         
