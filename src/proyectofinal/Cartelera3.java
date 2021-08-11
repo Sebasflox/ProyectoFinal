@@ -99,9 +99,9 @@ public class Cartelera3 extends javax.swing.JFrame {
                 .addComponent(BotonCancelar)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(102, 102, 102)
+                .addGap(98, 98, 98)
                 .addComponent(BotonComprar1)
-                .addGap(146, 146, 146)
+                .addGap(150, 150, 150)
                 .addComponent(BotonComprar2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BotonComprar3)
@@ -136,14 +136,13 @@ public class Cartelera3 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(79, 79, 79)
                                 .addComponent(jLabel3)))
-                        .addGap(56, 56, 56)
-                        .addComponent(BotonComprar1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(BotonComprar2)
-                            .addComponent(BotonComprar3))
+                            .addComponent(BotonComprar3)
+                            .addComponent(BotonComprar1))
                         .addGap(65, 65, 65)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonCancelar)
@@ -166,7 +165,7 @@ public class Cartelera3 extends javax.swing.JFrame {
     private void BotonAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAtrasActionPerformed
         // TODO add your handling code here:
         
-        SeleccionCartelera ventana2 = new SeleccionCartelera();
+        Inicio_sesion ventana2 = new Inicio_sesion();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -174,7 +173,7 @@ public class Cartelera3 extends javax.swing.JFrame {
 
     private void BotonComprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar1ActionPerformed
         
-        SeleccioSala3 ventana2 = new SeleccioSala3();
+        CompraBoletosAJ ventana2 = new CompraBoletosAJ();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -182,7 +181,7 @@ public class Cartelera3 extends javax.swing.JFrame {
 
     private void BotonComprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar2ActionPerformed
         
-        SeleccioSala3 ventana2 = new SeleccioSala3();
+        CompraBoletosAJ ventana2 = new CompraBoletosAJ();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -190,7 +189,7 @@ public class Cartelera3 extends javax.swing.JFrame {
 
     private void BotonComprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar3ActionPerformed
         
-        SeleccioSala3 ventana2 = new SeleccioSala3();
+        CompraBoletosAJ ventana2 = new CompraBoletosAJ();
         ventana2.setVisible(true);
         this.setVisible(false);
         
