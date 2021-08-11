@@ -160,7 +160,7 @@ public class Pelicula2 extends javax.swing.JFrame {
             
             
             
-            String contenido = dato.getnombre() + " " + dato.gettitulo() + " " + dato.getgenero() + " " + dato.getdirector() + " " + dato.getactor(); 
+            String contenido = "Nombre: "+ dato.getnombre() + " Titulo: " + dato.gettitulo() + " Genero: " + dato.getgenero() + " Director: " + dato.getdirector() + " Actor/Actriz: " + dato.getactor() + "\n"; 
             
             
             
