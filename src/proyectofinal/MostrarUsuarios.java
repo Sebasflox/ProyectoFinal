@@ -118,7 +118,7 @@ public class MostrarUsuarios extends javax.swing.JFrame {
 
     private void BotonSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSeleccionarActionPerformed
         
-        JFileChooser fc = new JFileChooser("C:\\Programacion\\Java\\ProyectoFinal");
+        JFileChooser fc = new JFileChooser("C:\\Programacion\\Java\\ProyectoFinal\\Registro_usuarios.txt");
         fc.showOpenDialog(null);
         File archivo = fc.getSelectedFile();
         
