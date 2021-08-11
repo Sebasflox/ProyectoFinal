@@ -84,7 +84,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="Botonout">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Salis del sistema"/>
+        <Property name="text" type="java.lang.String" value="Salir del sistema"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonoutActionPerformed"/>
