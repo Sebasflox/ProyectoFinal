@@ -198,7 +198,7 @@ public class Registrarse extends javax.swing.JFrame {
             
             
             
-            String contenido = dato.getuser() + "\n" +dato.getcontraseña() + "\n" +dato.getnombre() + " " + dato.getapellido1() + " " + dato.getapellido2() + " " + dato.getcedula() + " " + dato.getdia() + " " + dato.getmes() + " " + dato.getaño() + "\n"; 
+            String contenido = dato.getuser() + "\n" + dato.getcontraseña() + "\n" +dato.getnombre() + " " + dato.getapellido1() + " " + dato.getapellido2() + " " + dato.getcedula() + " " + dato.getdia() + " " + dato.getmes() + " " + dato.getaño() + "\n"; 
             
             
             //Textname.getText() + " " + Textapellido1.getText() + " " + Textapellido2.getText() + " " + TextID.getText() + " " + Textnacmiento.getText() + " " + Textuser.getText() + " " + Textpass.getText();
