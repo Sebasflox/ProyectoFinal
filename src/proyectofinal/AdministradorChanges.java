@@ -46,6 +46,11 @@ public class AdministradorChanges extends javax.swing.JFrame {
         });
 
         Botonuser.setText("Usuarios");
+        Botonuser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonuserActionPerformed(evt);
+            }
+        });
 
         Botonsedes.setText("Cartelera sedes");
         Botonsedes.addActionListener(new java.awt.event.ActionListener() {
@@ -115,6 +120,15 @@ public class AdministradorChanges extends javax.swing.JFrame {
         ventana2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BotonsedesActionPerformed
+
+    private void BotonuserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonuserActionPerformed
+        // TODO add your handling code here:
+        
+        MostrarUsuarios ventana2 = new MostrarUsuarios();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonuserActionPerformed
 
     /**
      * @param args the command line arguments
