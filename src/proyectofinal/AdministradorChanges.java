@@ -38,7 +38,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
 
         Labelnombre.setText("¿Qué desea editar?");
 
-        Botonout.setText("Salis del sistema");
+        Botonout.setText("Salir del sistema");
         Botonout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonoutActionPerformed(evt);
@@ -111,7 +111,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
     private void BotonsedesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonsedesActionPerformed
         // TODO add your handling code here:
         
-        Sedes ventana2 = new Sedes();
+        CarteleraGeneral ventana2 = new CarteleraGeneral();
         ventana2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BotonsedesActionPerformed
