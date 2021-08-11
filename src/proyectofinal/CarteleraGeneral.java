@@ -16,6 +16,8 @@ public class CarteleraGeneral extends javax.swing.JFrame {
      */
     public CarteleraGeneral() {
         initComponents();
+        setLocationRelativeTo(null);
+        
     }
 
     /**
