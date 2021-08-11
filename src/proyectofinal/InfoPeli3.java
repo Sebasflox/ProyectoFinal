@@ -16,6 +16,7 @@ public class InfoPeli3 extends javax.swing.JFrame {
      */
     public InfoPeli3() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
