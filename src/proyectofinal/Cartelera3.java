@@ -31,16 +31,14 @@ public class Cartelera3 extends javax.swing.JFrame {
     private void initComponents() {
 
         BotonCancelar = new javax.swing.JButton();
-        BotonInfo1 = new javax.swing.JButton();
         BotonComprar1 = new javax.swing.JButton();
-        BotonInfo2 = new javax.swing.JButton();
         BotonComprar2 = new javax.swing.JButton();
-        BotonInfo3 = new javax.swing.JButton();
         BotonComprar3 = new javax.swing.JButton();
         BotonAtras = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,17 +49,26 @@ public class Cartelera3 extends javax.swing.JFrame {
             }
         });
 
-        BotonInfo1.setText("Info");
-
         BotonComprar1.setText("Comprar");
-
-        BotonInfo2.setText("Info");
+        BotonComprar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonComprar1ActionPerformed(evt);
+            }
+        });
 
         BotonComprar2.setText("Comprar");
-
-        BotonInfo3.setText("Info");
+        BotonComprar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonComprar2ActionPerformed(evt);
+            }
+        });
 
         BotonComprar3.setText("Comprar");
+        BotonComprar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonComprar3ActionPerformed(evt);
+            }
+        });
 
         BotonAtras.setText("Atrás");
         BotonAtras.addActionListener(new java.awt.event.ActionListener() {
@@ -71,10 +78,15 @@ public class Cartelera3 extends javax.swing.JFrame {
         });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Rapidos y furiosos.jpg"))); // NOI18N
+        jLabel1.setToolTipText("Rapido & Furiosos 9, Justin Lin, Accion, Vin Diesel");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Resident Evil.jpg"))); // NOI18N
+        jLabel2.setToolTipText("Resident Evil: Retribution, Paul W.S. Anderson, Accion, Milla Jovovich");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ToyStory.jpg"))); // NOI18N
+        jLabel3.setToolTipText("Toy Story, John Lasseter, Infantil, Tom Hanks");
+
+        jLabel4.setText("Alajuela");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,52 +98,53 @@ public class Cartelera3 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BotonCancelar)
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel1)
-                .addGap(62, 62, 62)
-                .addComponent(jLabel2)
-                .addGap(64, 64, 64)
-                .addComponent(jLabel3)
-                .addContainerGap(72, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(105, 105, 105)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BotonInfo1)
-                    .addComponent(BotonComprar1))
+                .addGap(102, 102, 102)
+                .addComponent(BotonComprar1)
+                .addGap(146, 146, 146)
+                .addComponent(BotonComprar2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BotonComprar3)
+                .addGap(88, 88, 88))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BotonInfo2)
-                    .addComponent(BotonComprar2))
-                .addGap(155, 155, 155)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BotonInfo3)
-                    .addComponent(BotonComprar3))
-                .addGap(94, 94, 94))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel1)
+                        .addGap(62, 62, 62)
+                        .addComponent(jLabel2)
+                        .addGap(64, 64, 64)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(jLabel3)))
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonInfo3)
-                    .addComponent(BotonInfo2)
-                    .addComponent(BotonInfo1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonComprar3)
-                    .addComponent(BotonComprar2)
-                    .addComponent(BotonComprar1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel4)
+                                .addGap(16, 16, 16)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(79, 79, 79)
+                                .addComponent(jLabel3)))
+                        .addGap(56, 56, 56)
+                        .addComponent(BotonComprar1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BotonComprar2)
+                            .addComponent(BotonComprar3))
+                        .addGap(65, 65, 65)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonCancelar)
                     .addComponent(BotonAtras))
@@ -158,6 +171,30 @@ public class Cartelera3 extends javax.swing.JFrame {
         this.setVisible(false);
         
     }//GEN-LAST:event_BotonAtrasActionPerformed
+
+    private void BotonComprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar1ActionPerformed
+        
+        SeleccioSala3 ventana2 = new SeleccioSala3();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonComprar1ActionPerformed
+
+    private void BotonComprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar2ActionPerformed
+        
+        SeleccioSala3 ventana2 = new SeleccioSala3();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonComprar2ActionPerformed
+
+    private void BotonComprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar3ActionPerformed
+        
+        SeleccioSala3 ventana2 = new SeleccioSala3();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonComprar3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,11 +237,9 @@ public class Cartelera3 extends javax.swing.JFrame {
     private javax.swing.JButton BotonComprar1;
     private javax.swing.JButton BotonComprar2;
     private javax.swing.JButton BotonComprar3;
-    private javax.swing.JButton BotonInfo1;
-    private javax.swing.JButton BotonInfo2;
-    private javax.swing.JButton BotonInfo3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
