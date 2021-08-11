@@ -24,39 +24,34 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="BotonCancelar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="BotonSJ" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="BotonCT" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="BotonAJ" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="BotonGuardar" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="LabelActriz" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelActor" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelGenero" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelDirector" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelTitulo" min="-2" max="-2" attributes="0"/>
                           <Component id="LabelName" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="TextName" max="32767" attributes="0"/>
-                          <Component id="TextTitulo" max="32767" attributes="0"/>
-                          <Component id="TextDirector" alignment="0" max="32767" attributes="0"/>
-                          <Component id="TextGenero" alignment="0" max="32767" attributes="0"/>
-                          <Component id="TextActor" alignment="0" max="32767" attributes="0"/>
-                          <Component id="TextActriz" alignment="0" pref="225" max="32767" attributes="0"/>
+                          <Component id="TextName" min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="TextTitulo" min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="TextDirector" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="TextGenero" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="TextActor" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -90,17 +85,10 @@
                   </Group>
                   <Component id="TextActor" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="LabelActriz" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextActriz" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="39" max="32767" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="BotonCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonSJ" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonCT" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonAJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -138,30 +126,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="LabelActor">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Actor principal:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="LabelActriz">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Actriz prinicipal:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="BotonSJ">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="San Jos&#xe9;"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonSJActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="BotonCT">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Cartago"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="BotonAJ">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Alajuela"/>
+        <Property name="text" type="java.lang.String" value="Actor/Actriz  principal:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="TextName">
@@ -174,7 +139,13 @@
     </Component>
     <Component class="javax.swing.JTextField" name="TextActor">
     </Component>
-    <Component class="javax.swing.JTextField" name="TextActriz">
+    <Component class="javax.swing.JButton" name="BotonGuardar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonGuardarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
