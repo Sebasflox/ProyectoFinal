@@ -16,6 +16,8 @@ public class SeleccionCartelera extends javax.swing.JFrame {
      */
     public SeleccionCartelera() {
         initComponents();
+        setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -78,14 +80,13 @@ public class SeleccionCartelera extends javax.swing.JFrame {
                 .addComponent(BotonAJ)
                 .addGap(72, 72, 72))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(183, 183, 183)
-                        .addComponent(LabelInfo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(BotonCerrarsesion)))
+                .addGap(183, 183, 183)
+                .addComponent(LabelInfo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BotonCerrarsesion)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
