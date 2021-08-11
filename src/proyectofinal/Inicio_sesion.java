@@ -22,7 +22,6 @@ public class Inicio_sesion extends javax.swing.JFrame {
      */
     public Inicio_sesion() {
         initComponents();
-        
         setLocationRelativeTo(null);
     }
 
