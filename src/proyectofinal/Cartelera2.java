@@ -170,7 +170,7 @@ public class Cartelera2 extends javax.swing.JFrame {
 
     private void BotonComprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar1ActionPerformed
         
-        SeleccioSala2 ventana2 = new SeleccioSala2();
+        CompraBoletosCT ventana2 = new CompraBoletosCT();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -178,7 +178,7 @@ public class Cartelera2 extends javax.swing.JFrame {
 
     private void BotonComprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar2ActionPerformed
         
-        SeleccioSala2 ventana2 = new SeleccioSala2();
+        CompraBoletosCT ventana2 = new CompraBoletosCT();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -186,7 +186,7 @@ public class Cartelera2 extends javax.swing.JFrame {
 
     private void BotonComprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar3ActionPerformed
         
-        SeleccioSala2 ventana2 = new SeleccioSala2();
+        CompraBoletosCT ventana2 = new CompraBoletosCT();
         ventana2.setVisible(true);
         this.setVisible(false);
         
