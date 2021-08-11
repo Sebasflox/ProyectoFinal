@@ -31,11 +31,9 @@ public class CarteleraGeneral extends javax.swing.JFrame {
 
         BotonCancelar = new javax.swing.JButton();
         LabelInfo = new javax.swing.JLabel();
-        BotonPeli1 = new javax.swing.JButton();
-        BotonPeli2 = new javax.swing.JButton();
-        BotonPeli3 = new javax.swing.JButton();
-        BotonPeli4 = new javax.swing.JButton();
-        BotonPeli5 = new javax.swing.JButton();
+        BotonSJ = new javax.swing.JButton();
+        BotonCT = new javax.swing.JButton();
+        BotonAJ = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,62 +44,61 @@ public class CarteleraGeneral extends javax.swing.JFrame {
             }
         });
 
-        LabelInfo.setText("Area de administracion para las sedes");
+        LabelInfo.setText("Area de administracion para las peliculas de las sedes");
 
-        BotonPeli1.setText("Pelicula 1");
-        BotonPeli1.addActionListener(new java.awt.event.ActionListener() {
+        BotonSJ.setText("San José");
+        BotonSJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonPeli1ActionPerformed(evt);
+                BotonSJActionPerformed(evt);
             }
         });
 
-        BotonPeli2.setText("Pelicula 2");
+        BotonCT.setText("Cartago");
+        BotonCT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCTActionPerformed(evt);
+            }
+        });
 
-        BotonPeli3.setText("Pelicula 3");
-
-        BotonPeli4.setText("Pelicula 4");
-
-        BotonPeli5.setText("Pelicula 5");
+        BotonAJ.setText("Alajuela");
+        BotonAJ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonAJActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(BotonPeli1)
-                .addGap(34, 34, 34)
-                .addComponent(BotonPeli2)
-                .addGap(37, 37, 37)
-                .addComponent(BotonPeli3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(BotonPeli4)
-                .addGap(33, 33, 33)
-                .addComponent(BotonPeli5)
-                .addGap(23, 23, 23))
+                .addGap(72, 72, 72)
+                .addComponent(BotonSJ)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addComponent(BotonCT)
+                .addGap(100, 100, 100)
+                .addComponent(BotonAJ)
+                .addGap(68, 68, 68))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addComponent(LabelInfo))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(BotonCancelar)))
+                .addContainerGap()
+                .addComponent(BotonCancelar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(LabelInfo)
+                .addGap(151, 151, 151))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(32, 32, 32)
                 .addComponent(LabelInfo)
-                .addGap(51, 51, 51)
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonPeli1)
-                    .addComponent(BotonPeli2)
-                    .addComponent(BotonPeli3)
-                    .addComponent(BotonPeli4)
-                    .addComponent(BotonPeli5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                    .addComponent(BotonSJ)
+                    .addComponent(BotonCT)
+                    .addComponent(BotonAJ))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addComponent(BotonCancelar)
                 .addContainerGap())
         );
@@ -118,14 +115,30 @@ public class CarteleraGeneral extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BotonCancelarActionPerformed
 
-    private void BotonPeli1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPeli1ActionPerformed
+    private void BotonSJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSJActionPerformed
         // TODO add your handling code here:
         
         Pelicula1 ventana2 = new Pelicula1();
         ventana2.setVisible(true);
         this.setVisible(false);
         
-    }//GEN-LAST:event_BotonPeli1ActionPerformed
+    }//GEN-LAST:event_BotonSJActionPerformed
+
+    private void BotonCTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCTActionPerformed
+        
+        Pelicula2 ventana2 = new Pelicula2();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonCTActionPerformed
+
+    private void BotonAJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAJActionPerformed
+        
+        Pelicula3 ventana2 = new Pelicula3();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonAJActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,12 +176,10 @@ public class CarteleraGeneral extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonAJ;
+    private javax.swing.JButton BotonCT;
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonPeli1;
-    private javax.swing.JButton BotonPeli2;
-    private javax.swing.JButton BotonPeli3;
-    private javax.swing.JButton BotonPeli4;
-    private javax.swing.JButton BotonPeli5;
+    private javax.swing.JButton BotonSJ;
     private javax.swing.JLabel LabelInfo;
     // End of variables declaration//GEN-END:variables
 }
