@@ -23,13 +23,6 @@ public class Pelicula1 extends javax.swing.JFrame {
         
         
     }
-
-    public static String Name = "";
-    public static String Titulo = "";
-    public static String Director = "";
-    public static String Genero = "";
-    public static String Actor = "";
-    public static String Actriz = "";
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,16 +38,12 @@ public class Pelicula1 extends javax.swing.JFrame {
         LabelDirector = new javax.swing.JLabel();
         LabelGenero = new javax.swing.JLabel();
         LabelActor = new javax.swing.JLabel();
-        LabelActriz = new javax.swing.JLabel();
-        BotonSJ = new javax.swing.JButton();
-        BotonCT = new javax.swing.JButton();
-        BotonAJ = new javax.swing.JButton();
         TextName = new javax.swing.JTextField();
         TextTitulo = new javax.swing.JTextField();
         TextDirector = new javax.swing.JTextField();
         TextGenero = new javax.swing.JTextField();
         TextActor = new javax.swing.JTextField();
-        TextActriz = new javax.swing.JTextField();
+        BotonGuardar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,54 +62,43 @@ public class Pelicula1 extends javax.swing.JFrame {
 
         LabelGenero.setText("Genero:");
 
-        LabelActor.setText("Actor principal:");
+        LabelActor.setText("Actor/Actriz  principal:");
 
-        LabelActriz.setText("Actriz prinicipal:");
-
-        BotonSJ.setText("San José");
-        BotonSJ.addActionListener(new java.awt.event.ActionListener() {
+        BotonGuardar.setText("Guardar");
+        BotonGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonSJActionPerformed(evt);
+                BotonGuardarActionPerformed(evt);
             }
         });
-
-        BotonCT.setText("Cartago");
-
-        BotonAJ.setText("Alajuela");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(BotonCancelar)
-                        .addGap(50, 50, 50)
-                        .addComponent(BotonSJ)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BotonCT)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BotonAJ))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BotonGuardar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LabelActriz)
                             .addComponent(LabelActor)
                             .addComponent(LabelGenero)
                             .addComponent(LabelDirector)
                             .addComponent(LabelTitulo)
                             .addComponent(LabelName))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TextName)
-                            .addComponent(TextTitulo)
-                            .addComponent(TextDirector)
-                            .addComponent(TextGenero)
-                            .addComponent(TextActor)
-                            .addComponent(TextActriz, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))))
-                .addContainerGap(28, Short.MAX_VALUE))
+                            .addComponent(TextName, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextDirector, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextActor, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 8, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,16 +124,10 @@ public class Pelicula1 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(LabelActor))
                     .addComponent(TextActor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LabelActriz)
-                    .addComponent(TextActriz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonCancelar)
-                    .addComponent(BotonSJ)
-                    .addComponent(BotonCT)
-                    .addComponent(BotonAJ))
+                    .addComponent(BotonGuardar))
                 .addContainerGap())
         );
 
@@ -171,14 +143,45 @@ public class Pelicula1 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BotonCancelarActionPerformed
 
-    private void BotonSJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSJActionPerformed
-        // TODO add your handling code here:
+    private void BotonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonGuardarActionPerformed
         
+        try{
         
-        Name = TextName.getText();
+            Peliculas dato = new Peliculas();
+            
+            String nombrearchivo = "Registro_peliculas_SanJosé.txt";
+            
+            
+            dato.setnombre(TextName.getText());
+            dato.settitulo(TextTitulo.getText());
+            dato.setdirector(TextDirector.getText());
+            dato.setactor(TextActor.getText());
+            dato.setgenero(TextGenero.getText());
+            
+            
+            
+            String contenido = dato.getnombre() + " " + dato.gettitulo() + " " + dato.getgenero() + " " + dato.getdirector() + " " + dato.getactor(); 
+            
+            
+            
+            File file = new File(nombrearchivo);
+            
+            if(!file.exists()){
+                
+                file.createNewFile();
+            }
+            
+            FileWriter fw = new FileWriter(file, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(contenido);
+            bw.close();
+        }
+        catch(Exception e){
+            
+        e.printStackTrace();
         
-
-    }//GEN-LAST:event_BotonSJActionPerformed
+        }  
+    }//GEN-LAST:event_BotonGuardarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,18 +219,14 @@ public class Pelicula1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonAJ;
-    private javax.swing.JButton BotonCT;
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonSJ;
+    private javax.swing.JButton BotonGuardar;
     private javax.swing.JLabel LabelActor;
-    private javax.swing.JLabel LabelActriz;
     private javax.swing.JLabel LabelDirector;
     private javax.swing.JLabel LabelGenero;
     private javax.swing.JLabel LabelName;
     private javax.swing.JLabel LabelTitulo;
     private javax.swing.JTextField TextActor;
-    private javax.swing.JTextField TextActriz;
     private javax.swing.JTextField TextDirector;
     private javax.swing.JTextField TextGenero;
     private javax.swing.JTextField TextName;
