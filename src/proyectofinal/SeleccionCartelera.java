@@ -16,8 +16,6 @@ public class SeleccionCartelera extends javax.swing.JFrame {
      */
     public SeleccionCartelera() {
         initComponents();
-        
-        setLocationRelativeTo(null);
     }
 
     /**
@@ -29,22 +27,15 @@ public class SeleccionCartelera extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BotonCerrar = new javax.swing.JButton();
-        Labeldato = new javax.swing.JLabel();
+        LabelInfo = new javax.swing.JLabel();
         BotonSJ = new javax.swing.JButton();
         BotonCT = new javax.swing.JButton();
         BotonAJ = new javax.swing.JButton();
+        BotonCerrarsesion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        BotonCerrar.setText("Cerrar sesión");
-        BotonCerrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonCerrarActionPerformed(evt);
-            }
-        });
-
-        Labeldato.setText("Por favor elija la sede a la que desea ingresar");
+        LabelInfo.setText("¿A qué sede desea ingresar?");
 
         BotonSJ.setText("San José");
         BotonSJ.addActionListener(new java.awt.event.ActionListener() {
@@ -67,52 +58,52 @@ public class SeleccionCartelera extends javax.swing.JFrame {
             }
         });
 
+        BotonCerrarsesion.setText("Cerrar sesion");
+        BotonCerrarsesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCerrarsesionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(BotonCerrar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(59, 59, 59)
                 .addComponent(BotonSJ)
-                .addGap(68, 68, 68)
+                .addGap(84, 84, 84)
                 .addComponent(BotonCT)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(BotonAJ)
-                .addGap(60, 60, 60))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Labeldato)
-                .addGap(139, 139, 139))
+                .addGap(72, 72, 72))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(LabelInfo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(BotonCerrarsesion)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(Labeldato)
-                .addGap(48, 48, 48)
+                .addComponent(LabelInfo)
+                .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonSJ)
                     .addComponent(BotonCT)
                     .addComponent(BotonAJ))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                .addComponent(BotonCerrar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addComponent(BotonCerrarsesion)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void BotonCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCerrarActionPerformed
-        // TODO add your handling code here:
-        
-        Inicio_sesion ventana2 = new Inicio_sesion();
-        ventana2.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_BotonCerrarActionPerformed
 
     private void BotonSJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSJActionPerformed
         // TODO add your handling code here:
@@ -128,7 +119,7 @@ public class SeleccionCartelera extends javax.swing.JFrame {
         
         Cartelera2 ventana2 = new Cartelera2();
         ventana2.setVisible(true);
-        this.setVisible(false);        
+        this.setVisible(false);
         
     }//GEN-LAST:event_BotonCTActionPerformed
 
@@ -137,9 +128,18 @@ public class SeleccionCartelera extends javax.swing.JFrame {
         
         Cartelera3 ventana2 = new Cartelera3();
         ventana2.setVisible(true);
-        this.setVisible(false);        
+        this.setVisible(false);
         
     }//GEN-LAST:event_BotonAJActionPerformed
+
+    private void BotonCerrarsesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCerrarsesionActionPerformed
+        // TODO add your handling code here:
+        
+        Inicio_sesion ventana2 = new Inicio_sesion();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_BotonCerrarsesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,8 +179,8 @@ public class SeleccionCartelera extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonAJ;
     private javax.swing.JButton BotonCT;
-    private javax.swing.JButton BotonCerrar;
+    private javax.swing.JButton BotonCerrarsesion;
     private javax.swing.JButton BotonSJ;
-    private javax.swing.JLabel Labeldato;
+    private javax.swing.JLabel LabelInfo;
     // End of variables declaration//GEN-END:variables
 }
