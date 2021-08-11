@@ -24,47 +24,38 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-              <Component id="BotonPeli1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-              <Component id="BotonPeli2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Component id="BotonPeli3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="42" max="32767" attributes="0"/>
-              <Component id="BotonPeli4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Component id="BotonPeli5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+              <Component id="BotonSJ" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="121" max="32767" attributes="0"/>
+              <Component id="BotonCT" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+              <Component id="BotonAJ" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="195" max="-2" attributes="0"/>
-                      <Component id="LabelInfo" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BotonCancelar" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="BotonCancelar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="LabelInfo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Component id="LabelInfo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BotonPeli1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonPeli2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonPeli3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonPeli4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BotonPeli5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonSJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonCT" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BotonAJ" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="64" max="32767" attributes="0"/>
+              <EmptySpace pref="52" max="32767" attributes="0"/>
               <Component id="BotonCancelar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -82,36 +73,32 @@
     </Component>
     <Component class="javax.swing.JLabel" name="LabelInfo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Area de administracion para las sedes"/>
+        <Property name="text" type="java.lang.String" value="Area de administracion para las peliculas de las sedes"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="BotonPeli1">
+    <Component class="javax.swing.JButton" name="BotonSJ">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pelicula 1"/>
+        <Property name="text" type="java.lang.String" value="San Jos&#xe9;"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonPeli1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonSJActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="BotonPeli2">
+    <Component class="javax.swing.JButton" name="BotonCT">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pelicula 2"/>
+        <Property name="text" type="java.lang.String" value="Cartago"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonCTActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="BotonPeli3">
+    <Component class="javax.swing.JButton" name="BotonAJ">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pelicula 3"/>
+        <Property name="text" type="java.lang.String" value="Alajuela"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="BotonPeli4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Pelicula 4"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="BotonPeli5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Pelicula 5"/>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonAJActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
