@@ -137,6 +137,7 @@ public class MostrarUsuarios extends javax.swing.JFrame {
         }
         catch(Exception e){
         
+            JOptionPane.showMessageDialog(null, "No se pudo leer el archivo");
         
         }
     }//GEN-LAST:event_BotonSeleccionarActionPerformed
