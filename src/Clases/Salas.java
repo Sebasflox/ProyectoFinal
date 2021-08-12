@@ -1,61 +1,47 @@
 
 package Clases;
 
+import java.awt.Color;
+import java.awt.Font;
 
-public class Salas extends sedes{
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+
+public class Salas extends JLabel {
     
-    private String sede;
-    private int total_asientos;
-    private int preferenciales;
-    private int vip;
-    private int generales;
+    private boolean reservado;
     
-    public Salas (){}
-    
-    public Salas (String nombre, String sede, int total_asientos, int preferenciales, int vip, int generales){
-    
-        super(nombre);
-        this.generales = generales;
-        this.sede = sede;
-        this.total_asientos = total_asientos;
-        this.preferenciales = preferenciales;
-        this.vip = vip;
-    
-    }
-    
-    public String getsede(){
-    return sede;
-    }
-    public void setsede(String Sede){
-    sede=Sede;
-    }
-    
-    public int gettotal_asientos(){
-    return total_asientos;
-    }
-    public void settotal_sala(int Total_asientos){
-    total_asientos=Total_asientos;
-    }
-    
-    public int getpreferenciales(){
-    return preferenciales;
-    }
-    public void setpreferenciales(int Preferenciales){
-    preferenciales=Preferenciales;
-    }
-    
-    public int getvip(){
-    return vip;
-    }
-    public void setvip(int Vip){
-    vip=Vip;
-    }
-    
-    public int getgenerales(){
-    return generales;
-    }
-    public void setgenerales(int Generales){
-    generales=Generales;
-    }
-    
+	public final int VALOR;
+	
+	public Salas(String nombre, int valor) {
+		super(nombre);
+		VALOR = valor;
+		reservado = false;
+		setHorizontalAlignment(SwingConstants.CENTER);
+		setFont(new Font("Verdana", Font.BOLD, 20));
+		setOpaque(true);
+		setBackground(Color.WHITE);
+		setForeground(new Color(16, 175, 5));
+		setBorder(
+				BorderFactory.createCompoundBorder(BorderFactory.createMatteBorder(5,5,5,5, new Color(16,175,5)),
+				BorderFactory.createEmptyBorder(10, 10, 10, 10)));
+		setToolTipText("Disponible, valor: " + VALOR);
+	}
+	
+	public boolean estaReservado() {
+		return reservado;
+	}
+
+	public void reservar() {
+		reservado = true;
+		setForeground(Color.RED);
+		setToolTipText("Reservado");
+		setBorder(null);
+		setBorder(
+				BorderFactory.createCompoundBorder(BorderFactory.createMatteBorder(5, 5, 5, 5, Color.RED),
+				BorderFactory.createEmptyBorder(10, 10, 10, 10)));
+	}
+	
 }
