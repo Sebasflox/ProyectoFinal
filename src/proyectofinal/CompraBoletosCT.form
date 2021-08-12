@@ -532,7 +532,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="BotonFinalizar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Finalizar la compra"/>
+        <Property name="text" type="java.lang.String" value="Pagar"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BotonFinalizarMouseClicked"/>
