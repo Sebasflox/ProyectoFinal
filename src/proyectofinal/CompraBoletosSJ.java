@@ -5,6 +5,7 @@
  */
 package proyectofinal;
 
+import Clases.sedes;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,7 +14,6 @@ import javax.swing.JOptionPane;
  */
 public class CompraBoletosSJ extends javax.swing.JFrame {
 
-    
     /**
      * Creates new form CompraBoletos
      */
@@ -238,9 +238,9 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
 
         RadioDia3.setText("Miercoles");
 
-        RadioDia5.setText("Jueves");
+        RadioDia5.setText("Viernes");
 
-        RadioDia4.setText("Viernes");
+        RadioDia4.setText("Jueves");
 
         RadioDia6.setText("Sabado");
 
@@ -360,11 +360,11 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setText("Boletos normales:");
+        jLabel7.setText("Boletos normales 2.500:");
 
-        jLabel8.setText("Boletos preferenciales:");
+        jLabel8.setText("Boletos preferenciales 1.500:");
 
-        jLabel9.setText("Boletos VIP:");
+        jLabel9.setText("Boletos VIP 5.000:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -604,31 +604,31 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
         
         if(RadioDia1.isSelected()){
         
-        mensaje3="Dia 1";   
+        mensaje3="Lunes";   
         }
         else if(RadioDia2.isSelected()){
         
-        mensaje3="Dia 2";   
+        mensaje3="Martes";   
         }
         else if(RadioDia3.isSelected()){
         
-        mensaje3="Dia 3";   
+        mensaje3="Miercoles";   
         }
         else if(RadioDia4.isSelected()){
         
-        mensaje3="Dia 4";   
+        mensaje3="Jueves";   
         }
         else if(RadioDia5.isSelected()){
         
-        mensaje3="Dia 5";   
+        mensaje3="Viernes";   
         }
         else if(RadioDia6.isSelected()){
         
-        mensaje3="Dia 6";   
+        mensaje3="Sabado";   
         }
         else if(RadioDia7.isSelected()){
         
-        mensaje3="Dia 7";   
+        mensaje3="Domingo";   
         }
         
         String mensaje4 = "";
@@ -657,7 +657,11 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
         mensaje5 = RadioHora3.getText();
         }
         
-        JOptionPane.showMessageDialog(this, mensaje + "\n" +  mensaje2 + "\n" + mensaje3 + "\n" + mensaje4 + "\n" + "Hora: " + mensaje5 + "\n" + "Campos normales: " + TextCantidad.getText() + "\n" + "Campos preferenciales: " + TextBoletosPreferenciales.getText() + "\n" + "Campos VIP: " + TextVIP.getText());
+        sedes dato = new sedes();
+        dato.setnombre("Sede de San José");
+
+        
+        JOptionPane.showMessageDialog(this, mensaje + "\n" + dato.getnombre() + "\n" + mensaje2 + "\n" + mensaje3 + "\n" + mensaje4 + "\n" + "Hora: " + mensaje5 + "\n" + "Campos normales: " + TextCantidad.getText() + "\n" + "Campos preferenciales: " + TextBoletosPreferenciales.getText() + "\n" + "Campos VIP: " + TextVIP.getText());
     }//GEN-LAST:event_BotonFinalizarMouseClicked
 
     private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
