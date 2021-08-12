@@ -33,6 +33,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
         Botonout = new javax.swing.JButton();
         Botonuser = new javax.swing.JButton();
         Botonsedes = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,28 +60,37 @@ public class AdministradorChanges extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Informacion de las sedes");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(Botonuser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
-                .addComponent(Botonsedes)
-                .addGap(52, 52, 52))
-            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(Labelnombre))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Botonout))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel3)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Botonuser)
+                        .addGap(123, 123, 123)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Botonsedes)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                                .addComponent(jButton1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Labelnombre)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addComponent(jLabel3)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Botonout)
+                .addGap(19, 19, 19))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -97,7 +107,8 @@ public class AdministradorChanges extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Botonuser)
-                            .addComponent(Botonsedes))))
+                            .addComponent(Botonsedes)
+                            .addComponent(jButton1))))
                 .addContainerGap())
         );
 
@@ -129,6 +140,13 @@ public class AdministradorChanges extends javax.swing.JFrame {
         this.setVisible(false);
         
     }//GEN-LAST:event_BotonuserActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        InfoSedes ventana2 = new InfoSedes();
+        ventana2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,6 +188,7 @@ public class AdministradorChanges extends javax.swing.JFrame {
     private javax.swing.JButton Botonsedes;
     private javax.swing.JButton Botonuser;
     private javax.swing.JLabel Labelnombre;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
