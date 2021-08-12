@@ -428,12 +428,12 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jueves"/>
+            <Property name="text" type="java.lang.String" value="Viernes"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Viernes"/>
+            <Property name="text" type="java.lang.String" value="Jueves"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia6">
