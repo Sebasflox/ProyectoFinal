@@ -22,8 +22,6 @@ public class Cartelera extends javax.swing.JFrame {
     public Cartelera() {
         initComponents();
         setLocationRelativeTo(null);
-         
-   
     }
 
     /**
@@ -36,9 +34,7 @@ public class Cartelera extends javax.swing.JFrame {
     private void initComponents() {
 
         BotonCancelar = new javax.swing.JButton();
-        BotonComprar2 = new javax.swing.JButton();
         BotonComprar3 = new javax.swing.JButton();
-        BotonComprar1 = new javax.swing.JButton();
         BotonAtrás = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,24 +50,10 @@ public class Cartelera extends javax.swing.JFrame {
             }
         });
 
-        BotonComprar2.setText("Comprar");
-        BotonComprar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonComprar2ActionPerformed(evt);
-            }
-        });
-
         BotonComprar3.setText("Comprar");
         BotonComprar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonComprar3ActionPerformed(evt);
-            }
-        });
-
-        BotonComprar1.setText("Comprar");
-        BotonComprar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonComprar1ActionPerformed(evt);
             }
         });
 
@@ -99,59 +81,50 @@ public class Cartelera extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(BotonAtrás)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotonCancelar)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jLabel1)
-                .addGap(43, 43, 43)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(60, 60, 60))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(BotonComprar1)
-                .addGap(146, 146, 146)
-                .addComponent(BotonComprar2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotonComprar3)
-                .addGap(78, 78, 78))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(155, 155, 155))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(8, 8, 8)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(59, 59, 59)
+                                .addComponent(jLabel3)
+                                .addContainerGap(66, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(BotonCancelar)
+                                .addContainerGap())))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(BotonAtrás)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BotonComprar3)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(2, 2, 2)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(56, 56, 56)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BotonComprar1)
-                            .addComponent(BotonComprar2)
-                            .addComponent(BotonComprar3))
-                        .addGap(47, 47, 47)))
+                        .addComponent(jLabel4)
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(BotonCancelar)
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel3))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonAtrás)
-                    .addComponent(BotonCancelar))
-                .addGap(18, 18, 18))
+                    .addComponent(BotonComprar3))
+                .addContainerGap())
         );
 
         pack();
@@ -175,28 +148,11 @@ public class Cartelera extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BotonAtrásActionPerformed
 
-    private void BotonComprar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar1ActionPerformed
-        
-        CompraBoletosSJ ventana2 = new CompraBoletosSJ();
-        ventana2.setVisible(true);
-        this.setVisible(false);
-        
-    }//GEN-LAST:event_BotonComprar1ActionPerformed
-
-    private void BotonComprar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar2ActionPerformed
-        
-        CompraBoletosSJ ventana2 = new CompraBoletosSJ();
-        ventana2.setVisible(true);
-        this.setVisible(false);
-        
-    }//GEN-LAST:event_BotonComprar2ActionPerformed
-
     private void BotonComprar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonComprar3ActionPerformed
         
         CompraBoletosSJ ventana2 = new CompraBoletosSJ();
         ventana2.setVisible(true);
         this.setVisible(false);
-        
     }//GEN-LAST:event_BotonComprar3ActionPerformed
 
     /**
@@ -237,8 +193,6 @@ public class Cartelera extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonAtrás;
     private javax.swing.JButton BotonCancelar;
-    private javax.swing.JButton BotonComprar1;
-    private javax.swing.JButton BotonComprar2;
     private javax.swing.JButton BotonComprar3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
