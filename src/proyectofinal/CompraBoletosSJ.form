@@ -428,12 +428,12 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jueves"/>
+            <Property name="text" type="java.lang.String" value="Viernes"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Viernes"/>
+            <Property name="text" type="java.lang.String" value="Jueves"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioDia6">
@@ -541,14 +541,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Boletos normales:"/>
+        <Property name="text" type="java.lang.String" value="Boletos normales 2.500:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="TextCantidad">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Boletos preferenciales:"/>
+        <Property name="text" type="java.lang.String" value="Boletos preferenciales 1.500:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="TextBoletosPreferenciales">
@@ -557,7 +557,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Boletos VIP:"/>
+        <Property name="text" type="java.lang.String" value="Boletos VIP 5.000:"/>
       </Properties>
     </Component>
   </SubComponents>
