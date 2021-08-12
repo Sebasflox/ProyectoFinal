@@ -196,7 +196,7 @@ public class MantenimientoSalas extends javax.swing.JFrame {
             
             
             
-            String contenido = "Nombre: "+ dato.getnombre() + " Sede: " + dato.getsede() + " Total de asientos: " + dato.getTotal_Asientos() + " Asientos preferenciales: " + dato.getAsientos_preferenciales() + " Asientos VIP: " + dato.getAsientos_VIP() + " Asientos Preferenciales: " + dato.getAsientos_preferenciales() +"\n"; 
+            String contenido = "Nombre: "+ dato.getnombre() + " Sede: " + dato.getsede() + " Total de asientos: " + dato.getTotal_Asientos() + " Asientos generales: " + dato.getAsientos_generales() + " Asientos VIP: " + dato.getAsientos_VIP() + " Asientos Preferenciales: " + dato.getAsientos_preferenciales() +"\n"; 
             
             
             
