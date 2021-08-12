@@ -1,0 +1,1 @@
+Nombre: Sala1 San_José Sede: San José Total de asientos: 50 Asientos preferenciales: 20 Asientos VIP: 10Asientos Preferenciales: 20
