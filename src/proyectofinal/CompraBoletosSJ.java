@@ -551,42 +551,7 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
             
             }
         
-        }         
-        
-
-        
-        /*String horas7 = "2:00p.m.";
-        String horas8 = "5:00p.m.";
-        String horas9 = "7:00p.m."; 
-        
-        if(Radio1.isSelected()){
-            
-            if(RadioSala1.isSelected()){
-                
-            RadioHora1.setText(horas7);
-            RadioHora2.setText(horas8);
-            RadioHora3.setText(horas9);
-                
-            }   
-        }
-        
-        String horas10 = "2:00p.m.";
-        String horas11 = "7:00p.m.";
-        String horas12 = "8:30p.m."; 
-        
-        if(Radio1.isSelected()){
-            
-            if(RadioSala2.isSelected()){
-                
-            RadioHora1.setText(horas10);
-            RadioHora2.setText(horas11);
-            RadioHora3.setText(horas12);
-                
-            }   
-        }*/
-        
-        
-        
+        }           
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
