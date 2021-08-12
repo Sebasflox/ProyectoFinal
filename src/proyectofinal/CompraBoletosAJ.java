@@ -5,6 +5,7 @@
  */
 package proyectofinal;
 
+import Clases.sedes;
 import javax.swing.JOptionPane;
 
 /**
@@ -450,7 +451,7 @@ public class CompraBoletosAJ extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        Cartelera ventana2 = new Cartelera();
+        Cartelera3 ventana2 = new Cartelera3();
         ventana2.setVisible(true);
         this.setVisible(false);
         
@@ -604,31 +605,31 @@ public class CompraBoletosAJ extends javax.swing.JFrame {
         
         if(RadioDia1.isSelected()){
         
-        mensaje3="Dia 1";   
+        mensaje3="Lunes";   
         }
         else if(RadioDia2.isSelected()){
         
-        mensaje3="Dia 2";   
+        mensaje3="Martes";   
         }
         else if(RadioDia3.isSelected()){
         
-        mensaje3="Dia 3";   
+        mensaje3="Miercoles";   
         }
         else if(RadioDia4.isSelected()){
         
-        mensaje3="Dia 4";   
+        mensaje3="Jueves";   
         }
         else if(RadioDia5.isSelected()){
         
-        mensaje3="Dia 5";   
+        mensaje3="Viernes";   
         }
         else if(RadioDia6.isSelected()){
         
-        mensaje3="Dia 6";   
+        mensaje3="Sabado";   
         }
         else if(RadioDia7.isSelected()){
         
-        mensaje3="Dia 7";   
+        mensaje3="Domingo";   
         }
         
         String mensaje4 = "";
@@ -657,7 +658,10 @@ public class CompraBoletosAJ extends javax.swing.JFrame {
         mensaje5 = RadioHora3.getText();
         }
         
-        JOptionPane.showMessageDialog(this, mensaje + "\n" +  mensaje2 + "\n" + mensaje3 + "\n" + mensaje4 + "\n" + "Hora: " + mensaje5 + "\n" + "Campos normales: " + TextCantidad.getText() + "\n" + "Campos preferenciales: " + TextBoletosPreferenciales.getText() + "\n" + "Campos VIP: " + TextVIP.getText());
+        sedes dato = new sedes();
+        dato.setnombre("Sede de Alajuela");
+        
+        JOptionPane.showMessageDialog(this, mensaje + "\n" + dato.getnombre() + "\n"+  mensaje2 + "\n" + mensaje3 + "\n" + mensaje4 + "\n" + "Hora: " + mensaje5 + "\n" + "Campos normales: " + TextCantidad.getText() + "\n" + "Campos preferenciales: " + TextBoletosPreferenciales.getText() + "\n" + "Campos VIP: " + TextVIP.getText());
     }//GEN-LAST:event_BotonFinalizarMouseClicked
 
     private void BotonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFinalizarActionPerformed
