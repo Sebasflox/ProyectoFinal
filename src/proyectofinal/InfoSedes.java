@@ -134,7 +134,7 @@ public class InfoSedes extends javax.swing.JFrame {
             dato.setnombre(TextName.getText());
             dato.setdireccion(TextDireccion.getText());
                
-            String contenido = "Nombre: "+ dato.getnombre() + " Direccion: " + dato.getdireccion(); 
+            String contenido = "Nombre: "+ dato.getnombre() + " Direccion: " + dato.getdireccion()+"\n"; 
             
             
             
