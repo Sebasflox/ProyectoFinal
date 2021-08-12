@@ -348,7 +348,7 @@ public class CompraBoletosSJ extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        BotonFinalizar.setText("Finalizar la compra");
+        BotonFinalizar.setText("Pagar");
         BotonFinalizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BotonFinalizarMouseClicked(evt);
