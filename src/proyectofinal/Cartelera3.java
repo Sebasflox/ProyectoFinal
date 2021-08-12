@@ -136,7 +136,7 @@ public class Cartelera3 extends javax.swing.JFrame {
     private void BotonAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAtrasActionPerformed
         // TODO add your handling code here:
         
-        Inicio_sesion ventana2 = new Inicio_sesion();
+        SeleccionCartelera ventana2 = new SeleccionCartelera();
         ventana2.setVisible(true);
         this.setVisible(false);
         
